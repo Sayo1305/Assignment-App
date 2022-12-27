@@ -1,38 +1,169 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.BackgroundMain{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../src/Assets/Images/notes.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Background_text , .BackgroundButton{
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.BackgroundText1 {
   text-align: center;
+  width: 100%;
+  font-size: 6rem;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.BackgroundText2 , .BackgroundButton{
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+}
+.BackgroundButton{
+  color: #000;
+  top: 150%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(to left , #20BF55 , #01BAEF);
+  border-radius: 10px;
+  width: 100px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar{
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  left: 0;
+  gap: 10px;
+  z-index: 10;
+  align-items: center;
+  justify-content: flex-end;
+}
+.NavbarButton{
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+  background: linear-gradient(to left , #257FD2,#006AC0);
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SignUpBG{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.SignUpBox{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  top: 10%;
+  left: 25%;
+  position: absolute;
+}
+
+.InputSignup{
+  text-align: center;
+  outline:none;
+  color: blueviolet;
+  margin: 0 auto;
+  border: rgba(0, 0, 0, 0.1) 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 50%;
+}
+.InputSignup.button{
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to left , #972780 , #F0642F);
+}
+.InputLoginContainer{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.InputLogin.button{
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to left , #00486e , #17cf42);
 }
 
-.App-link {
-  color: #61dafb;
+
+.InputSignup.button.Login
+{
+  background: linear-gradient(to right , #972780 , #01BAEF);
+  border: none;
+}
+.BackHomebutton{
+  position: absolute;
+  top: 10px;
+  background: linear-gradient(to left , #972780 , #01BAEF);
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  right: 20px;
+  border-radius: 5px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.LoginBackground{
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.HomeNavbar{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
+  height: 50px;
+  box-shadow: 0px 0px 11px -2px #000;
+  background: #01BAEF;
 }
