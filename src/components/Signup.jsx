@@ -2,6 +2,7 @@ import React from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Bg from '../Assets/Images/bghome.jpg';
 const Signup = () => {
   const URL = "http://localhost:3001/User/register";
   const [Name, setName] = useState("");

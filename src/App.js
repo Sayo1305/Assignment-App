@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Login from './components/Login';
 import Main from './components/Main';
+import MyPage from './components/MyPage';
 import Signup from './components/Signup';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/Login" element={<Login/>}/>
         <Route exact path="/Register" element={<Signup/>}/>
         <Route exact path='/Home' element={<Home/>}/>
+        <Route exact path='/Mypage' element={<MyPage/>}/>
       </Routes>
     </div>
   );
