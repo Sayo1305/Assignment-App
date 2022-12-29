@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = 3001
+const port = 3001;
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const jwt = require('jsonwebtoken');
