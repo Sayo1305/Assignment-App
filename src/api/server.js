@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = 3001;
+const port = 3001
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const jwt = require('jsonwebtoken');
@@ -18,7 +18,11 @@ const corsOptions ={
 }
 app.use(cors(corsOptions));
 
-mongoose.connect('mongodb://localhost:27017/dbloginapp').catch((err) =>{
+mongoose.connect('mongodb://localhost:27017/dblogin',{useNewUrlParser: true,
+useUnifiedTopology: true,
+// useCreateIndex: true
+})
+.catch((err) =>{
       console.log(err);
 }).then(()=>{
       console.log("Connected Mongoose");
