@@ -6,7 +6,7 @@ import CardBox from "./CardBox";
 const MyPage = () => {
   return (
     <div className="MyPageContainer">
-      <HomeNavbar />
+   
       {/* <Stack direction="row" alignItems="center" spacing={2}>
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
