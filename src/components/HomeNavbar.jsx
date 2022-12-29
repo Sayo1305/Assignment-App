@@ -41,7 +41,7 @@ const HomeNavbar = () => {
                   <Avatar src="/broken-image.jpg" />
                 </Button>
                 <Menu {...bindMenu(popupState)}>
-                  <MenuItem onClick={popupState.close}><p  onClick={()=>{navigate('/Mypage')}}>My account</p></MenuItem>
+                  <MenuItem onClick={popupState.close}><p  onClick={()=>{navigate('/Mypage')}}>My Profile</p></MenuItem>
                   <MenuItem  onClick={popupState.close} ><p onClick={()=>{navigate('/Home')}}>Home page</p></MenuItem>
                   <MenuItem  onClick={popupState.close} ><p onClick={()=>{navigate('/')}}>Logout</p></MenuItem>
                 </Menu>
