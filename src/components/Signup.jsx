@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Bg from '../Assets/Images/bghome.jpg';
 const Signup = () => {
-  const URL = "http://localhost:3001/User/register";
+  const URL = "http://localhost:3001/User/User/Register";
   const [Name, setName] = useState("");
   const [Result, SetResult] = useState([]);
   const [Password, SetPassword] = useState("");

@@ -3,7 +3,7 @@ import BG from "../Assets/Images/Loginnotes.webp";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 const Login = () => {
-  const URL = "http://localhost:3001/User/login";
+  const URL = "http://localhost:3001/User/User/Login";
   const navigate = useNavigate();
   const [Password, SetPassword] = useState("");
   const [Result, SetResult] = useState([]);
